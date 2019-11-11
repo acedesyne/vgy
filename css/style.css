@@ -150,7 +150,7 @@ body{
 .about-section h1{
     color: var(--color-primary);
     font-size: 2.8em;
-    padding: 16px;
+    padding: 16px 0;
 }
 
 .about-section h2{
@@ -220,47 +220,6 @@ body{
     font-weight: 600;
     line-height: 36px;
 }
-
-@media only screen and (max-width: 600px) {
-    .card-block{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .upload-card{
-        padding: 0;
-        width: 80%;
-    }
-
-    .top-navbar{
-        margin-left: 32px;
-    }
-    
-    .top-navbar img{
-        width: 120px;
-    }
-
-    .menu-section{
-        display: none;
-    }
-
-    footer > p {
-        font-size: .8em;
-        margin:8px 0;
-    }
-  }
-
-  @media only screen and (max-width: 960px) {
-    .menu-section{
-        display: none;
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    .secondary-action{
-        display: none;
-    }
-  }
 
   /* SHARE X CSS */
 
@@ -332,3 +291,71 @@ footer span{
     margin: auto;
     color: var(--color-secondary);
 }
+
+
+/* MEDIA QUERY HERE */
+
+
+@media only screen and (max-width: 600px) {
+    .card-block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upload-card{
+        padding: 0;
+        width: 80%;
+    }
+
+    .top-navbar{
+        margin-left: 32px;
+    }
+    
+    .top-navbar img{
+        width: 120px;
+    }
+
+    .menu-section{
+        display: none;
+    }
+
+    footer > p {
+        font-size: .8em;
+        margin:8px 0;
+    }
+
+    .about-section h1{
+        color: var(--color-primary);
+        font-size: 2.5em;
+        padding: 16px 0;
+    }
+
+    .about-section h2{
+        color: var(--color-primary);
+        font-size: 2em;
+        padding: 16px 0;
+    }
+
+    .sharex-section h1{
+        font-size: 2.5em;
+        padding: 16px 0;
+    }
+    
+  }
+
+/* -------------------------------------------------- */
+
+  @media only screen and (max-width: 960px) {
+    .menu-section{
+        display: none;
+    }
+  }
+
+  /* -------------------------------------------------- */
+
+  @media only screen and (max-width: 1200px) {
+    .secondary-action{
+        display: none;
+    }
+  }
