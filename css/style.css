@@ -299,11 +299,8 @@ button{
 }
 
 footer{
-    margin: auto;
+    margin: 0 auto;
     padding: 16px;
-    display: flex;
-    align-items: center;
-    margin-left: 120px;
     color: var(--color-primary);
     text-align: center;
 }
@@ -311,9 +308,4 @@ footer{
 footer span{
     margin: auto;
     color: var(--color-secondary);
-}
-
-footer .acedesyne{
-    position: absolute;
-    right: 120px;
 }
