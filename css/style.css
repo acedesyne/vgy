@@ -42,6 +42,7 @@ body{
     text-decoration: none;
     margin: 0 15px;
     transition: color 150ms ease-in-out;
+    user-select: none;
 }
 
 .menu a:hover{
@@ -57,6 +58,7 @@ body{
     position: absolute;
     right: 60px;
     top: 20px;
+    cursor: pointer;
 }
 
 .menu-section > .secondary-action ul li{
@@ -73,6 +75,7 @@ body{
     text-decoration: none;
     margin: 0 15px;
     transition: color 150ms ease-in-out;
+    user-select: none;
 }
 
 .menu-section > .secondary-action ul li:last-child{
@@ -216,7 +219,7 @@ body{
     line-height: 36px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .card-block{
         display: flex;
         align-items: center;
@@ -246,6 +249,16 @@ body{
     }
   }
 
+  @media only screen and (max-width: 960px) {
+    .menu-section{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .secondary-action{
+        display: none;
+    }
+  }
 
   /* SHARE X CSS */
 
@@ -296,6 +309,13 @@ button{
     background: var(--color-primary);
     border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 4px 16px -8px rgba(63, 61, 86, 0.5);
+}
+
+button a{
+    text-decoration: none;
+    color: var(--color-offwhite);
+    font-size: .9em;
 }
 
 footer{
