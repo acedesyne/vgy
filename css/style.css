@@ -285,6 +285,7 @@ footer{
     padding: 16px 0;
     color: var(--color-primary);
     text-align: center;
+    font-size: .8em;
 }
 
 footer span{
