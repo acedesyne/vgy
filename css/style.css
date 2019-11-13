@@ -296,14 +296,12 @@ footer span{
 /* FAQ */
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
-section{
+/* section{
     padding: 36px 0;
 }
 
 .faq-section > h1{
-    /* background: var(--color-primary); */
     color: var(--color-primary);
-    /* color: var(--color-offwhite); */
     font-size: 2em;
     padding: 16px 0;
     text-align: center;
@@ -313,13 +311,14 @@ section{
 
 .faq-block{
     padding: 36px;
-    /* background: var(--color-primary); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
+    margin: 0 auto;
+    width: 1200px;
 }
 .faq-card{
     background: var(--color-primary);
@@ -336,30 +335,29 @@ section{
     font-size: .9em;
     color: var(--color-offwhite);
     padding: 6px 0;
-    /* text-align: center; */
+    text-decoration: underline;
+    transition: 150ms ease-in-out;
 }
-.faq-card p{
+
+.faq{
     font-size: .9em;
     color: var(--color-offwhite-tint);
     padding: 6px 0;
     display: none;
     font-weight: 400;
-    /* text-align: center; */
-}
-
-.faq-card:hover{
-    background: var(--color-secondary);
     transition: 150ms ease-in-out;
 }
 
-.faq-divider{
-    height: 1.5px;
-    width: 60px;
-    background: var(--color-offwhite);
-    opacity: .1;
-    margin-bottom: 8px;
-    display: none;
+.faq-card:hover{
+    opacity: .95
 }
+
+.details-color {
+    color : var(--color-offwhite-tint);
+    font-size: .9em;
+    transition: 150ms ease-in-out;
+} */
+
 /* MEDIA QUERY HERE */
 
 
