@@ -149,13 +149,13 @@ body{
 
 .about-section h1{
     color: var(--color-primary);
-    font-size: 2.8em;
+    font-size: 2.2em;
     padding: 16px 0;
 }
 
 .about-section h2{
     color: var(--color-primary);
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
     padding: 0 30px;
     text-align: center;
@@ -225,7 +225,7 @@ body{
 
 .sharex-section h1{
     color: var(--color-offwhite);
-    font-size: 2.8em;
+    font-size: 2em;
     text-align: center;
     padding: 16px;
 }
@@ -293,11 +293,66 @@ footer span{
     color: var(--color-secondary);
 }
 
+/* FAQ */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+section{
+    padding: 36px 0;
+}
+
+.faq-section > h1{
+    /* background: var(--color-primary); */
+    color: var(--color-primary);
+    /* color: var(--color-offwhite); */
+    font-size: 2em;
+    padding: 16px 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+
+.faq-block{
+    padding: 36px;
+    /* background: var(--color-primary); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.faq-card{
+    background: var(--color-primary);
+    box-shadow: 0 1px 4px rgba(63, 61, 86, 0.2);
+    border-radius: 4px;
+    padding: 8px 32px;
+    margin: 8px;
+    border-bottom: var(--color-offwhite-tint);
+    max-width: auto;
+    cursor: pointer;
+}
+
+.faq-card h3{
+    color: var(--color-offwhite);
+    padding: 8px;
+    /* text-align: center; */
+}
+.faq-card p{
+    color: var(--color-offwhite-tint);
+    display: none;
+    /* text-align: center; */
+}
+
+.faq-card:hover{
+    background: var(--color-secondary);
+    transition: 150ms ease-in-out;
+}
+
 
 /* MEDIA QUERY HERE */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .card-block{
         display: flex;
         align-items: center;
@@ -335,14 +390,20 @@ footer span{
     .about-section h2{
         color: var(--color-primary);
         font-size: 2em;
-        padding: 16px 0;
+        padding: 16px 8px;
     }
 
     .sharex-section h1{
         font-size: 2.5em;
         padding: 16px 0;
     }
-    
+
+    .faq-card{
+        margin: 8px;
+        width: 100%;
+        padding: 8px;
+        margin: 4px;
+    }
   }
 
 /* -------------------------------------------------- */
