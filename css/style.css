@@ -177,7 +177,7 @@ body{
 /*CARDS CSS */
 
 .bottom-section{
-    padding: 60px 0;
+    /* padding: 60px 0; */
     background: var(--color-secondary);
 }
 
@@ -201,7 +201,7 @@ body{
     box-shadow: 0 1px 8px rgba(63, 61, 86, 0.2);
     user-select: none;
     cursor: pointer;
-    transform: translateY(-120px);
+    transform: translateY(-74px);
     transition: 150ms ease-in-out;
 }
 
@@ -261,7 +261,7 @@ body{
 }
 
 button{
-    margin-top: 30px;
+    margin: 30px 0;
     padding: 12px 28px;
     font-size: 1em;
     color: var(--color-offwhite);
@@ -285,7 +285,7 @@ footer{
     padding: 16px 0;
     color: var(--color-primary);
     text-align: center;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 footer span{
@@ -386,7 +386,7 @@ footer span{
     }
 
     footer > p {
-        font-size: .8em;
+        font-size: .9em;
         margin:8px 0;
     }
 
